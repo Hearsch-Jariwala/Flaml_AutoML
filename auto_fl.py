@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
@@ -27,6 +28,12 @@ def main():
 
     # print evaluation scores
     print(classification_report(y_test, preds))
+
+    # Visualize feature importance
+    plt.barh(
+        automl.model.estimator.feature_name_,
+        automl.model.estimator.feature_importances_,
+    )
 
 
 if __name__ == "__main__":

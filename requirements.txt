@@ -5,3 +5,4 @@ pylint
 pmlb
 sklearn
 AutoML
+matplotlib

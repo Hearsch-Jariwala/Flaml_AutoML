@@ -4,9 +4,52 @@ FLAML (Fast and Lightweight AutoML) is a lightweight and efficient library imple
 [Documentation](https://microsoft.github.io/FLAML/docs/Use-Cases/Task-Oriented-AutoML/)
 
 ## Dataset
-The ‘Adult’ dataset from the PMLB repo. This dataset was extracted from the 1994 census database. In this dataset, there is a binary column that tells whether a person makes over 50K a year. We will use this as the target variable for building ML models.
+The ‘Adult’ dataset from the Penn Machine Learning Benchmarks (PMLB) repo. 
+This dataset was extracted from the 1994 census database. In this dataset, there is a binary column that tells whether a person makes over 50K a year. We will use this as the target variable for building ML models.
 
-## Sample Output
+## Getting Started
+
+1) Create a virtual environment.
+
+```
+cd Flaml_AutoML/
+virtualenv venv
+```
+
+2) Activate the virtual environment.
+  
+- Mac:
+```
+source venv/bin/activate
+```
+
+- Windows :
+
+```
+.\venv\Scripts\activate
+```
+
+3) Then run: **(recommended)**
+
+```
+make all
+```
+
+- or install the requirements using pip.
+
+```
+pip install -r requirements.txt
+```
+
+
+## Usage
+
+To run the file :
+
+```
+python3 auto_fl.py
+```
+## Results
 ```
 [flaml.automl: 08-04 00:06:45] {2444} INFO - task = classification
 INFO:flaml.automl:task = classification
@@ -81,5 +124,16 @@ Best hyperparmeter config: {'n_estimators': 141, 'num_leaves': 139, 'min_child_s
     accuracy                           0.88      9769
    macro avg       0.84      0.80      0.82      9769
 weighted avg       0.87      0.88      0.87      9769
+```
+## Sample Output
+![Feature Importance](feature_importance.png)
+
+## Citation
+```
+@inproceedings{wang2021flaml,
+    title={FLAML: A Fast and Lightweight AutoML Library},
+    author={Chi Wang and Qingyun Wu and Markus Weimer and Erkang Zhu},
+    year={2021},
+    booktitle={MLSys}
 ```
 
