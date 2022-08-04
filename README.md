@@ -1,3 +1,4 @@
+[![Build test with Github Actions](https://github.com/Hearsch-Jariwala/Flaml_AutoML/actions/workflows/main.yml/badge.svg)](https://github.com/Hearsch-Jariwala/Flaml_AutoML/actions/workflows/main.yml)
 # Flaml AutoML
 FLAML (Fast and Lightweight AutoML) is a lightweight and efficient library implemented in Python and it has a scikit-learn style API. It allows the users to not worry about selecting the right machine learning algorithms or hyperparameters for each algorithm.
 
